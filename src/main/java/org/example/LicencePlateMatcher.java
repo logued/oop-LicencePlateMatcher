@@ -1,7 +1,7 @@
 package org.example;
 
 /* Purpose: to encapsulate the logic to match a given licence plate using
-          the description given tb the tollbooth operator
+          the description given by the tollbooth operator
 
 A tollbooth operator saw a suspicious car passing through the toll booth moments after a crime in the area. Strangely, they remember:
 
@@ -41,7 +41,7 @@ public class LicencePlateMatcher {
         String sequence = plate.getSequenceNumber();
         if (sequence == null) return false;
 
-        int count = 0;  // count number of '6' digits
+        int count = 0;  // count occurrences of digit '6'
         for (char ch : sequence.toCharArray()) {
             if (ch == '6')
                 count++;

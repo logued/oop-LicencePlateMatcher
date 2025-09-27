@@ -15,7 +15,7 @@ public class Main {
         LicencePlate plate = new LicencePlate("262","LH","1666");
 
         if(LicencePlateMatcher.isLicencePlateAMatch(plate)) {
-            System.out.println("Licence plate "+ plate +"is match");}
+            System.out.println("Licence plate "+ plate +"is a match");}
         else {
             System.out.println("Licence plate "+ plate+"is not match");
         }
